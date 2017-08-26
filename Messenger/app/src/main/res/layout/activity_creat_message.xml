@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.quoccuong.messenger.CreatNewMessageActivity">
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/activity_creat_message_entercontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/activity_creat_message_edit_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/activity_converstation_imgv_gesture"
+        android:maxLines="7"
+        android:minHeight="50dp"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@drawable/cursor_blue" />
+
+    <ImageView
+        android:id="@+id/activity_converstation_imgv_gesture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/activity_creat_message_imgv_send"
+        android:padding="10dp"
+        android:src="@drawable/toggle_off" />
+
+    <ImageView
+        android:id="@+id/activity_creat_message_imgv_send"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/send2"
+        android:layout_alignTop="@+id/activity_converstation_imgv_gesture"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

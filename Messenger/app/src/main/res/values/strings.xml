@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Messenger</string>
+
+    <string name="gesture_manager">Gesture Manager</string>
+    <string name="title_activity_message">Message Activity</string>
+    <string name="title_activity_converstation"></string>
+    <string name="title_activity_creat_message">Creat new message</string>
+    <string name="title_activity_gesture_manager">Gesture Manager </string>
+    <string name="title_activity_create_new_gestue">Create new gestue</string>
+</resources>

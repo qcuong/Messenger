@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quoccuong.mymessenger.ConverstationActivity">
+
+    <ListView
+        android:id="@+id/activity_converstation_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_converstation_edit_msg"
+        android:layout_marginBottom="5dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"></ListView>
+
+    <EditText
+        android:id="@+id/activity_converstation_edit_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/activity_converstation_imgv_gesture"
+        android:maxLines="7"
+        android:minHeight="50dp"
+        android:layout_above="@+id/activity_converstation_linearlayout"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@drawable/cursor_blue" />
+
+    <ImageView
+        android:id="@+id/activity_converstation_imgv_gesture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/activity_converstation_imgv_send"
+        android:padding="10dp"
+        android:layout_above="@+id/activity_converstation_linearlayout"
+        android:src="@drawable/toggle_off" />
+
+    <ImageView
+        android:id="@+id/activity_converstation_imgv_send"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/activity_converstation_imgv_gesture"
+        android:padding="10dp"
+        android:layout_above="@+id/activity_converstation_linearlayout"
+        android:src="@drawable/send1" />
+
+    <LinearLayout
+        android:id="@+id/activity_converstation_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"></LinearLayout>
+
+</RelativeLayout>
